@@ -16,7 +16,7 @@ function Form() {
       // Check for specific email and password
       if (email === 'khushi@dumdum.com' && password === 'dumdum') {
         // Redirect to Google.com
-        window.location.href = 'https://pinterest-main.vercel.app';
+        window.location.href = 'https://pinterestforkhushihome.vercel.app/';
       } else {
         alert('Invalid email or password');
       }
