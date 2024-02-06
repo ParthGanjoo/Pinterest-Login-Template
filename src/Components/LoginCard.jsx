@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../Styles/LoginCard.css';
 import LoginLogo from '../Assets/Logo (5).png';
 
+// Change the logo to friend's initial for a personal touch
+
 function Form() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -13,10 +15,11 @@ function Form() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      // Check for specific email and password
-      if (email === 'khushi@dumdum.com' && password === 'dumdum') {
-        // Redirect to Google.com
-        window.location.href = 'https://pinterestforkhushihome.vercel.app/';
+
+      // Change Email and Password to anything you like
+
+      if (email === 'hello@example.com' && password === 'hello') {
+        window.location.href = 'https://pinterestforfriend.vercel.app/';
       } else {
         alert('Invalid email or password');
       }
@@ -48,10 +51,16 @@ function Form() {
           <img src={LoginLogo} width={40} />
         </div>
         <h2>Welcome to Pinterest</h2>
-        <h4>for Khushi</h4>
+
+        {/* // Add name of friend in place of *Name* */}
+
+        <h4>for *Name*</h4>
         <form onSubmit={handleSubmit}>
           <div className='form-group'>
-            <label htmlFor='email'>Email Address</label>
+
+            {/* // Remove *hello@example.com* and *hello*, they are just a part of the template */}
+
+            <label htmlFor='email'>Email Address *hello@example.com*</label>
             <input
               type='email'
               onChange={(e) => setEmail(e.target.value)}
@@ -60,7 +69,7 @@ function Form() {
             {errors.email && <div className='error'>{errors.email}</div>}
           </div>
           <div className='form-group'>
-            <label htmlFor='password'>Password</label>
+            <label htmlFor='password'>Password *hello*</label>
             <input
               type='password'
               onChange={(e) => setPassword(e.target.value)}
