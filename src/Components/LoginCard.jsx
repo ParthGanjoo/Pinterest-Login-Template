@@ -19,7 +19,7 @@ function Form() {
       // Change Email and Password to anything you like
 
       if (email === 'hello@example.com' && password === 'hello') {
-        window.location.href = 'https://pinterestforfriend.vercel.app/';
+        window.location.href = 'https://pinterest-home-template.vercel.app/';
       } else {
         alert('Invalid email or password');
       }
